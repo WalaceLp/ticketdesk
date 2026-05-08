@@ -2,7 +2,11 @@
 
   <div class="menu">
 
-    <a routerLink="/" routerLinkActive="active">
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <mat-icon>dashboard</mat-icon>
       <span>Dashboard</span>
     </a>
