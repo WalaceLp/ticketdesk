@@ -1,0 +1,74 @@
+.reports {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  padding: 16px;
+}
+
+.card h3 {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 8px 0 0;
+}
+
+.chart {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  padding: 16px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fill {
+  height: 10px;
+  width: 60%;
+  border-radius: 6px;
+  background: #e5e7eb;
+}
+
+/* cores mock */
+.fill.open {
+  background: #ef4444;
+  width: 30%;
+}
+
+.fill.progress {
+  background: #f59e0b;
+  width: 20%;
+}
+
+.fill.resolved {
+  background: #22c55e;
+  width: 70%;
+}

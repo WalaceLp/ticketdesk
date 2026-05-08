@@ -1,1 +1,51 @@
-<h2>System Settings</h2>
+<div class="settings">
+
+  <h1>Settings</h1>
+
+  <!-- PROFILE -->
+  <div class="section">
+
+    <h2>Profile</h2>
+
+    <div class="card">
+
+      <label>Name</label>
+      <input type="text" value="Walace Louzada">
+
+      <label>Email</label>
+      <input type="text" value="walace@email.com">
+
+      <label>Role</label>
+      <input type="text" value="Support Engineer">
+
+    </div>
+
+  </div>
+
+  <!-- PREFERENCES -->
+  <div class="section">
+
+    <h2>Preferences</h2>
+
+    <div class="card">
+
+      <label>
+        <input type="checkbox" [(ngModel)]="notifications">
+        Enable notifications
+      </label>
+
+      <label>
+        <input type="checkbox" [(ngModel)]="slaAlerts">
+        SLA breach alerts
+      </label>
+
+      <label>
+        <input type="checkbox" [(ngModel)]="compactMode">
+        Compact mode
+      </label>
+
+    </div>
+
+  </div>
+
+</div>

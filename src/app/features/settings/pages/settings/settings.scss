@@ -1,0 +1,33 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}

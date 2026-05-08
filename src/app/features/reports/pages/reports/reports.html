@@ -1,1 +1,56 @@
-<h2>Reports</h2>
+<div class="reports">
+
+  <h1>Reports</h1>
+
+  <!-- CARDS -->
+  <div class="cards">
+
+    <div class="card">
+      <h3>Total Tickets</h3>
+      <p>{{ data.total }}</p>
+    </div>
+
+    <div class="card">
+      <h3>Open</h3>
+      <p>{{ data.open }}</p>
+    </div>
+
+    <div class="card">
+      <h3>Resolved</h3>
+      <p>{{ data.resolved }}</p>
+    </div>
+
+    <div class="card">
+      <h3>SLA Breached</h3>
+      <p>{{ data.slaBreached }}</p>
+    </div>
+
+  </div>
+
+  <!-- CHART MOCK -->
+  <div class="chart">
+
+    <h2>Tickets by Status</h2>
+
+    <div class="bars">
+
+      <div class="bar">
+        <span>Open</span>
+        <div class="fill open"></div>
+      </div>
+
+      <div class="bar">
+        <span>In Progress</span>
+        <div class="fill progress"></div>
+      </div>
+
+      <div class="bar">
+        <span>Resolved</span>
+        <div class="fill resolved"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
