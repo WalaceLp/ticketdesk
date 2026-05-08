@@ -1,1 +1,43 @@
-<h2>Tickets</h2>
+<div class="tickets">
+
+  <div class="header">
+    <h1>Tickets</h1>
+
+    <div class="search-box">
+        <mat-icon>search</mat-icon>
+        <input type="text" placeholder="Search tickets..." />
+    </div>
+  </div>
+
+  <div class="table">
+
+    <div class="row header-row">
+      <div>ID</div>
+      <div>Client</div>
+      <div>Title</div>
+      <div>Priority</div>
+      <div>Status</div>
+      <div>SLA</div>
+    </div>
+
+    @for (ticket of tickets; track ticket.id) {
+      <div class="row">
+
+        <div>#{{ ticket.id }}</div>
+        <div>{{ ticket.client }}</div>
+        <div>{{ ticket.title }}</div>
+
+        <div class="priority">{{ ticket.priority }}</div>
+
+        <div class="status" [ngClass]="ticket.status">
+          {{ ticket.status }}
+        </div>
+
+        <div>{{ ticket.sla }}</div>
+
+      </div>
+    }
+
+  </div>
+
+</div>

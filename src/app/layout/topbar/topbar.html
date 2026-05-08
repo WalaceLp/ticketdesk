@@ -5,20 +5,42 @@
     <h2>TicketDesk</h2>
   </div>
 
-  <div class="search-section">
-    <mat-form-field appearance="outline" subscriptSizing="dynamic" class="search-field">
-      <mat-icon matPrefix>search</mat-icon>
-      <input matInput placeholder="Buscar tickets..." class="search-input">
-    </mat-form-field>
-  </div>
-
   <div class="right-section">
 
-    <button mat-icon-button>
-      <mat-icon>notifications</mat-icon>
-    </button>
+    <!-- NOTIFICAÇÕES -->
+    <div class="notif-wrapper">
 
+      <button mat-icon-button class="icon-btn">
+        <mat-icon>notifications</mat-icon>
+      </button>
 
+      <!-- DROPDOWN MOCK -->
+      <div class="notif-dropdown">
+
+        <div class="notif-header">
+          Notifications
+        </div>
+
+        <div class="notif-item">
+          <span>Fiber outage detected</span>
+          <small>2 min ago</small>
+        </div>
+
+        <div class="notif-item">
+          <span>SLA breach on Ticket #1023</span>
+          <small>10 min ago</small>
+        </div>
+
+        <div class="notif-item">
+          <span>New ticket assigned</span>
+          <small>1h ago</small>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- AVATAR -->
     <div class="avatar">
       WL
     </div>

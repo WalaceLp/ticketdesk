@@ -1,0 +1,107 @@
+.tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LINHAS CONTÍNUAS */
+.row {
+  display: grid;
+  grid-template-columns: 80px 140px 1fr 120px 120px 100px;
+
+  padding: 12px;
+
+  background: white;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  align-items: center;
+
+  /* remove “card feeling” */
+  border-radius: 0;
+}
+
+/* remove espaçamento entre linhas */
+.row + .row {
+  margin-top: 0;
+}
+
+/* header continua destacado */
+.header-row {
+  font-weight: 600;
+  background: #f3f4f6;
+
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 12px;
+
+  width: 320px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  transition: all 0.2s ease;
+}
+
+/* hover leve */
+.search-box:hover {
+  border-color: #cbd5e1;
+}
+
+/* foco mais moderno */
+.search-box:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.search-box mat-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #9ca3af;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+
+  width: 100%;
+
+  font-size: 14px;
+  color: #111827;
+  background: transparent;
+}
+
+.search-box input::placeholder {
+  color: #9ca3af;
+}
