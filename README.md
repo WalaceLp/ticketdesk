@@ -1,59 +1,161 @@
 # TicketDesk
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.10.
+Modern technical ticket management MVP built with Angular and Angular Material.
 
-## Development server
+TicketDesk simulates a corporate support operations platform focused on incident management, SLA monitoring, and technical support workflows. The project was created to demonstrate modern frontend architecture, enterprise UI design, and dashboard development using Angular.
 
-To start a local development server, run:
+---
+
+## Features
+
+- Modern enterprise dashboard
+- Technical ticket management
+- SLA monitoring
+- Dark mode interface
+- Responsive corporate layout
+- Operational metrics cards
+- Ticket status indicators
+- Angular Material UI
+- Mocked telecom incidents and metrics
+
+---
+
+## Tech Stack
+
+- Angular 21
+- Angular Material
+- TypeScript
+- SCSS
+- RxJS
+- Chart.js
+- ng2-charts
+
+---
+
+## Project Structure
+
+```bash
+src/app
+├── core
+├── shared
+├── layout
+└── features
+    ├── dashboard
+    ├── tickets
+    └── auth
+```
+
+---
+
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/WalaceLp/ticketdesk.git
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Open:
 
 ```bash
-ng generate component component-name
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
+
+
+## Author
+
+Developed by Walace Louzada.
+```# TicketDesk
+
+Modern technical ticket management MVP built with Angular and Angular Material.
+
+TicketDesk simulates a corporate support operations platform focused on incident management, SLA monitoring, and technical support workflows. The project was created to demonstrate modern frontend architecture, enterprise UI design, and dashboard development using Angular.
+
+---
+
+## Features
+
+- Modern enterprise dashboard
+- Technical ticket management
+- SLA monitoring
+- Dark mode interface
+- Responsive corporate layout
+- Operational metrics cards
+- Ticket status indicators
+- Angular Material UI
+- Mocked telecom incidents and metrics
+
+---
+
+## Tech Stack
+
+- Angular 21
+- Angular Material
+- TypeScript
+- SCSS
+- RxJS
+- Chart.js
+- ng2-charts
+
+---
+
+## Project Structure
 
 ```bash
-ng generate --help
+src/app
+├── core
+├── shared
+├── layout
+└── features
+    ├── dashboard
+    ├── tickets
+    └── auth
 ```
 
-## Building
+---
 
-To build the project run:
+## Getting Started
+
+### Clone the repository
 
 ```bash
-ng build
+git clone https://github.com/WalaceLp/ticketdesk.git
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### Install dependencies
 
 ```bash
-ng test
+npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### Run development server
 
 ```bash
-ng e2e
+ng serve
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Open:
 
-## Additional Resources
+```bash
+http://localhost:4200
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Author
+
+Developed by Walace Louzada.
+```
