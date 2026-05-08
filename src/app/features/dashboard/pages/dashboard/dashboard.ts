@@ -1,17 +1,12 @@
 import { Component } from '@angular/core';
-import { Topbar } from '../../../../layout/topbar/topbar';
-import { Sidebar } from '../../../../layout/sidebar/sidebar';
+import { TICKETS } from '../../../../shared/mocks/tickets.mock';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [
-    Topbar,
-    Sidebar,
-
-  ],
+  imports: [],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.scss'
 })
 export class Dashboard {
-
+  tickets = TICKETS;
 }

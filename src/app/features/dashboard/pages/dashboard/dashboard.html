@@ -1,1 +1,56 @@
-<h2>Dashboard</h2>
+<div class="dashboard">
+
+  <div class="stats">
+
+    <div class="card">
+      <h3>Open Tickets</h3>
+      <p>18</p>
+    </div>
+
+    <div class="card">
+      <h3>Critical</h3>
+      <p>4</p>
+    </div>
+
+    <div class="card">
+      <h3>SLA Breached</h3>
+      <p>2</p>
+    </div>
+
+    <div class="card">
+      <h3>Resolved Today</h3>
+      <p>11</p>
+    </div>
+
+  </div>
+
+  <div class="table-section">
+
+    <h2>Recent Tickets</h2>
+
+    <div class="table">
+
+      @for (ticket of tickets; track ticket.id) {
+        <div class="row">
+
+          <div class="id">#{{ ticket.id }}</div>
+
+          <div class="info">
+            <strong>{{ ticket.title }}</strong>
+            <span>{{ ticket.client }}</span>
+          </div>
+
+          <div class="priority">{{ ticket.priority }}</div>
+
+          <div class="status">{{ ticket.status }}</div>
+
+          <div class="sla">{{ ticket.sla }}</div>
+
+        </div>
+      }
+
+    </div>
+
+  </div>
+
+</div>
