@@ -1,0 +1,49 @@
+.sidebar {
+  width: 240px;
+  height: calc(100vh - 72px);
+
+  background: white;
+
+  border-right: 1px solid #e5e7eb;
+
+  padding: 24px 16px;
+
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 12px 14px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  color: #374151;
+
+  font-weight: 500;
+
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  background: #f3f4f6;
+}
+
+.menu a.active {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.menu mat-icon {
+  font-size: 22px;
+}
