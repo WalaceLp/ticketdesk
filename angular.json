@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "ticket-system": {
+    "ticketdesk": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ticket-system:build:production"
+              "buildTarget": "ticketdesk:build:production"
             },
             "development": {
-              "buildTarget": "ticket-system:build:development"
+              "buildTarget": "ticketdesk:build:development"
             }
           },
           "defaultConfiguration": "development"
